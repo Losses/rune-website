@@ -75,3 +75,115 @@ a:hover {
 .github-link:hover {
   box-shadow: 0 -10px 0 inset #eeb72bd8;
 }
+
+.logo-link {
+  text-decoration: none;
+}
+
+.letter-page main {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  transform: none;
+}
+
+.rune-title {
+  font-size: 40px;
+  font-style: italic;
+  transform: translateY(-24%);
+}
+
+#rune-letter {
+  padding-left: 12px;
+  padding-top: 36px;
+  max-width: 640px;
+  text-align: start;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+#rune-letter p {
+  margin-bottom: 0.95em;
+}
+
+.sign-p {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.sign {
+  height: 84px;
+}
+
+.link-list {
+  text-align: start;
+  list-style: none;
+}
+
+.link-list li {
+  margin-bottom: 0.5em;
+}
+
+.link-list a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color ease-in-out 300ms;
+}
+
+.link-list a::link,
+.link-list a::visited {
+  text-decoration: none;
+  color: white;
+}
+
+.link-list a:hover {
+  color: #eeb72b;
+}
+
+.link-list a i {
+  font-size: 1.3em;
+  margin-right: 0.25em;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: initial;
+  }
+
+  .letter-page main {
+    flex-direction: column;
+  }
+
+  #rune-letter {
+    padding: 12px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .logo-section {
+    width: 100%;
+  }
+
+  .link-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .link-list li {
+    margin: 8px 12px;
+  }
+
+  .link-list li {
+    font-size: 20px;
+  }
+
+  .link-list li span {
+    display: none;
+  }
+}
